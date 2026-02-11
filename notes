@@ -1,0 +1,101 @@
+#sql 
+
+->what is sql?
+ -sql stands for structred query language.
+ -it is used to communicate with the database.
+ -it is not case sensitive 
+->what is data?
+  -data might be anything like names ,cities,villages.
+->what is database?
+ -database is used to store data and in this that sql is used to communicate with it.
+ -there are some types in it.they are:
+    -RDMS-relational data base mangemnet system(postgre,orcale,sql server)
+         -used for relational tables and the data can be visible in tables format only.
+    -NOSQL-non relational(mongodb)
+         -used for nonrelational data and stored in trees format.
+->sql vs MySQL
+  -sql is like the used to perform crud operations in relational db,where as the MySQL is a rdms as that uses sql.
+->CRUD OPERATIONS:
+ create-used to create database,tables.
+ read  -used to read the data in tables.
+ update-used to update the data in tables.
+ delete-used to delete the data in tables.
+->datatypes in sql
+ integer          -int
+ tinyint          -tynyint
+ biginteger       -bigint
+ float            -float        
+ double           -double
+ character        -char(wastage of storage)
+ varchar          -varchar(no wastage of storage)
+ date             -date
+ year             -year
+ blob             -blob(used to store images,videos,multimedia storage)
+ boolean          -Boolean(true or false)
+->sql commands
+ -DDL (Data Definition Language)
+Used to define structure of database.
+Examples: CREATE, ALTER, DROP, TRUNCATE
+ -DML (Data Manipulation Language)
+Used to modify data inside tables.
+Examples: INSERT, UPDATE, DELETE
+ -DQL (Data Query Language)
+Used to retrieve data.
+Example: SELECT
+-DCL & TCL
+DCL → Controls permissions (GRANT, REVOKE)
+TCL → Manages transactions (COMMIT, ROLLBACK)
+
+Constraints
+PRIMARY KEY → Unique & not null.
+NOT NULL → Cannot store null value.
+UNIQUE → No duplicate values.
+FOREIGN KEY → Links two tables.
+DEFAULT → Sets default value.
+-SELECT & WHERE
+SELECT → Retrieve data.
+WHERE → Filter records.
+=, >, <, >=, <= → Comparison operators.
+AND, OR, NOT → Logical operators.
+Used to get specific data.
+-ORDER BY & GROUP BY
+ORDER BY → Sort results.
+ASC → Ascending (default).
+DESC → Descending order.
+GROUP BY → Group similar data.
+HAVING → Filter grouped data.
+
+-Aggregate Functions
+COUNT() → Number of rows.
+SUM() → Total value.
+AVG() → Average value.
+MAX() → Highest value.
+MIN() → Lowest value.
+
+-Joins
+INNER JOIN → Matching rows only.
+LEFT JOIN → All left + matching right.
+RIGHT JOIN → All right + matching left.
+FULL JOIN → All rows from both.
+Used to combine tables.
+
+- Set Operations
+UNION → Combine & remove duplicates.
+UNION ALL → Combine & keep duplicates.
+INTERSECT → Common records.
+EXCEPT/MINUS → Difference records.
+Used to combine query results.
+
+- Subqueries
+Query inside another query.
+Used for filtering data.
+Can use in WHERE clause.
+Helps solve complex problems.
+Improves query logic.
+
+-Transactions (TCL)
+COMMIT → Save changes permanently.
+ROLLBACK → Undo changes.
+SAVEPOINT → Temporary checkpoint.
+Ensures data consistency.
+Used in banking systems mostly.
