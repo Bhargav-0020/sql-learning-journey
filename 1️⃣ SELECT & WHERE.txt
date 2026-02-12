@@ -1,0 +1,51 @@
+1️⃣ SELECT & WHERE
+Display all records from the student table.
+-select * from student;
+Show students whose marks are greater than 80.
+-select * from students where marks<80; 
+Display students who belong to the city "vizag".
+-select * from students where city='vizag';
+Show students whose grade is "A".
+-select * from students where grade='A';
+Display students whose marks are between 50 and 90.
+-select * from students where marks between 50 and 90;
+2️⃣ ORDER BY
+Display students in ascending order of marks.
+-select * from students order by  marks asc;  
+Display students in descending order of roll number.
+-select * from students order by marks desc;
+Show students ordered by city name.
+-select * from students order by city name;
+3️⃣ DISTINCT
+Display unique cities from the student table.
+-select distinct cities from students; 
+Display unique grades.
+-select distnict grades from students;
+4️⃣ LIMIT
+Display top 3 students with highest marks.
+-select * from students where marks<highest marks limit 3;
+Display first 5 records from the table.
+-select records from students limit 5; 
+5️⃣ LIKE & PATTERN MATCHING
+Display students whose name starts with 'r'.
+-select * from students  where name regexp'^[r]'; 
+Display students whose name ends with 'a'.
+-select * from students where name regexp'[a]$';
+Display students whose name contains 'e'.
+-SELECT * FROM students WHERE name LIKE '%e%';
+6️⃣ AGGREGATE FUNCTIONS (COUNT, SUM, AVG, MAX, MIN)
+Count total number of students.
+-select count(*) as total students from students;
+Find maximum marks.
+-select max(marks) as maximum marks from students;
+Find minimum marks.
+-select min(marks) as minimum marks from students;
+Find average marks of all students.
+-select avg(marks) from students;
+Find total marks of all students.
+-select sum(marks) from students;
+7️⃣ GROUP BY
+Count number of students in each city.
+-select city,count(students) from students group by city; 
+Find average marks in each city.
+-select city,avg(marks) from students group by city; 
