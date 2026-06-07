@@ -1,4 +1,4 @@
-# SQL Learning Journey 🚀
+# SQL Learning Journey 🚀git status
 This repository contains my complete SQL notes and practice queries 
 learned from ComputerWorld, W3Schools, GeeksforGeeks, and YouTube.
 
