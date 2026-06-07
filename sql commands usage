@@ -1,0 +1,66 @@
+create database sairam;
+use sairam; 
+create table students(
+s_id int primary key auto_increment,
+s_name varchar(255),
+age bigint,
+city varchar(255)
+);
+create table employees(
+e_id int primary key auto_increment,
+e_name varchar(50),
+salary decimal(10,2),
+department varchar(30)
+);
+create table products(
+p_id int,
+P_name varchar(20),
+price bigint,
+stock int
+);
+insert into students(s_name,age,city) values ('sai',20,'guntur'),
+('ram',30,'chinapalkaluru'),
+('nithin',40,'pedapalkaluru'),
+('bhargav',50,'perecherala'),
+('talari',60,'hyderabad');
+insert into employees(e_name,salary,department) values 
+('sai',2000000,'devloper'),
+('ram',3000000,'analyst'),
+('nithin',400000,'engineer'),
+('bhargav',500000,'backend'),
+('talari',6000000,'software'),
+('bhavya',2000000,'devloper'),
+('venkata',3000000,'analyst'),
+('lakshmi',400000,'engineer'),
+('naveen',500000,'backend'),
+('mahesh',6000000,'software');
+insert into products values 
+(1,'bread',200,2),
+(2,'jam',300,3),
+(3,'masala',400,4),
+(4,'dosa',500,5),
+(5,'idli',600,6);
+select * from students;
+select e_name,salary from employees; 
+update employees set salary=200 where e_id=2;
+update products set price=price*1000;
+set sql_safe_updates=0;
+update students set city='vijayawada' where s_id=1;
+delete from students where  s_id=5;
+delete from products where stock<3;
+alter table students add email varchar(255);
+alter table employees add joining date;
+alter table employees modify e_name varchar(200);
+alter table students drop email;
+rename table students to student_details;
+alter table employees change e_name employees_name varchar(200);
+drop table products; 
+alter table employees drop joining;
+select count(*) as total_employees from employees; 
+select avg(salary) as average_salary from employees;
+select min(price) from products;
+select max(price) from products;
+select sum(salary) from employees;
+select * from employees where salary between 3000000 and 6000000;
+select * from student_details where age between 20 and 100;
+git add

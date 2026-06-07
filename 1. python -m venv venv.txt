@@ -1,0 +1,6 @@
+1. python -m venv venv
+2. venv\Scripts\activate
+3. python -m ensurepip --upgrade
+4. python -m pip install --upgrade pip
+5. python -m pip install pandas numpy matplotlib seaborn scikit-learn streamlit plotly joblib streamlit-option-menu ipykernel notebook
+6. streamlit run app.py
